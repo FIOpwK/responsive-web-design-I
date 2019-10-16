@@ -129,9 +129,6 @@ h1 {
 .innovate {
      /*border: 2px solid red;*/
     width: 50%;
-    /*display: flex;*/
-    /*flex-direction: column;*/
-    /*justify-content: center;*/
     padding: 5%;
     align-items: center;
     display:flex;
@@ -223,5 +220,36 @@ p {
 #copy {
     text-align: center;
     font-family: 'Indie Flower', cursive;
+}
+
+
+/*Media Queries*/
+
+@media (max-width: 500px) {
+    .top-image {
+        display: none;
+    }
+
+    .top-content {
+        flex-direction: column;
+    }
+
+    #features, #about {
+        width: 100%;
+    }
+
+    .bottom-content {
+        flex-direction: column;
+    }
+
+    #services, #product, #vision {
+        width: 100%;
+    }
+
+    #nav-bar, .navigation {
+        /*flex-direction: column-reverse;  /*flex-direction: column-reverse;*/
+
+    }
+
 }
 
