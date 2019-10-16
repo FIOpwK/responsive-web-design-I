@@ -1,3 +1,286 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+/* Your code starts here! */
+
+.container {
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 10px;
+}
+
+.get-started {
+    /* border: 1px solid; */
+
+
+
+    height: 396px;
+    display: inline-block;
+    width: 100%;
+    max-width: 900px;
+    position: relative;
+    padding-top: 5%;
+    text-align: center;
+    margin: 50px auto 50px auto;
+    /* border: 2px solid gray; */
+
+
+}
+
+button {
+    border: 1px solid;
+
+
+    /* position: relative; */
+    height: 33px;
+    width: 44%;
+    max-width: 447px;
+    background-color: #f3f3f3;
+}
+
+button:hover {
+    background-color: #f5fff5;
+}
+
+#nav-bar {
+    /* position: relative; */
+    font-family: 'Indie Flower', cursive;
+    position: fixed;
+    top: 0;
+    width: 90%;
+    background-color: skyblue;
+    border-radius: 80px;
+    margin: 0 auto;
+    max-width: 900px;
+
+    z-index: 1;
+
+}
+
+.logo {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    padding: 1%;
+}
+
+
+h1 {
+    font-size: 88px;
+    display: block;
+    width: 88%;
+    padding: 10% 0% 0% 10%;
+    max-width: 450px;
+}
+
+/* button {
+	background-color: white;
+	padding: 1%;
+	width: 20%;
+	position: relative;
+	display: inline-block;
+} */
+
+.top-img {
+    display: inline-block;
+    position: absolute;
+    /* border: 2px solid red; */
+    width: 50%;
+    max-width: 450px;
+    height: 355px;
+    margin-left: 5%;
+
+
+}
+
+.innovate {
+    /* border: 2px solid red; */
+    width: 50%;
+    max-width: 450px;
+}
+
+.middle-img {
+    padding: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+
+
+.navigation {
+
+    width: 70%;
+    margin: 0;
+    padding: 2%;
+    text-decoration: none;
+    word-spacing: 45px;
+    text-align: center;
+}
+
+nav a {
+    color: gray;
+}
+/* pseudo-class*/
+
+a:hover {
+    background-color: greenyellow;
+    transition: all 0.9s ease-in-out;
+    border-radius: 40px;
+
+}
+
+nav {
+    display: inline-block;
+}
+
+
+
+.top-content {
+    padding-top: 5%;
+
+    height: 150px;
+    margin-bottom: 25px;
+    position: relative;
+    border-top: 1px solid;
+}
+
+p {
+    font-family: 'Indie Flower', cursive;
+}
+
+.top-content p {
+    margin-bottom: 25px;
+
+}
+
+#features {
+    width: 50%;
+    display: inline-block;
+    position: absolute;
+}
+
+#about {
+    display: inline-block;
+    position: absolute;
+    width: 50%;
+    margin: 0px 50%;
+}
+
+.bottom-content {
+    position: relative;
+    height: 150px;
+    margin-top: 25px;
+    padding-bottom: 20%;
+    border-bottom: 1px solid;
+}
+
+#services {
+    display: inline-block;
+    width: 33.33%;
+    position: absolute;
+    padding-left: 20px;
+
+}
+
+#product {
+    display: inline-block;
+    width: 33.33%;
+    position: absolute;
+    margin-left: 33.33%;
+    padding-left: 20px;
+}
+
+#vision {
+    display: inline-block;
+    width: 33.33%;
+    position: absolute;
+    margin-left: 66.66%;
+    padding-left: 20px;
+}
+
+.contact {
+
+    margin: 1% auto ;
+
+    display: inline-block;
+    position: absolute;
+
+    padding-bottom: 40px;
+    width: 100%;
+    max-width: 900px;
+    line-height: 29px;
+
+
+}
+
+
+#copy {
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+}
 
