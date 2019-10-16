@@ -201,12 +201,14 @@ nav {
 
 
 .top-content {
-    padding-top: 5%;
+    /*padding-top: 5%;*/
+    display: flex;
+    justify-content: space-between;
 
-    height: 150px;
+    /*height: 150px;*/
     margin-bottom: 25px;
-    position: relative;
-    border-top: 1px solid;
+    /*position: relative;*/
+    border: 1px solid;
 }
 
 p {
@@ -219,16 +221,15 @@ p {
 }
 
 #features {
-    width: 50%;
-    display: inline-block;
-    position: absolute;
+    width: 45%;
+    /*display: flex;*/
+    /*position: absolute;*/
 }
 
 #about {
-    display: inline-block;
-    position: absolute;
-    width: 50%;
-    margin: 0px 50%;
+    /*position: absolute;*/
+    width: 45%;
+        /*margin: 0px 50%;*/
 }
 
 .bottom-content {
