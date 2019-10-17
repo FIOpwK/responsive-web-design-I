@@ -116,7 +116,6 @@ button:hover {
 
 h1 {
     font-size: 88px;
-
 }
 
 .top-img {
@@ -139,9 +138,7 @@ h1 {
 .middle-img {
     padding: 1%;
     width: 100%;
-    /*margin-left: auto;*/
-    /*margin-right: auto;*/
-    /*display: block;*/
+
 }
 
 
@@ -156,8 +153,11 @@ h1 {
 }
 
 nav a {
-    color: gray;
-}
+     color: gray;
+     /*border-top: 1px solid;*/
+     /*border-bottom: 1px solid;*/
+     /*padding: 5%;*/
+ }
 /* pseudo-class*/
 
 a:hover {
@@ -210,7 +210,7 @@ p {
     flex-direction: column;
     padding-bottom: 40px;
     width: 100%;
-    /*max-width: 900px;*/
+
     line-height: 29px;
 
 
@@ -218,6 +218,7 @@ p {
 
 
 #copy {
+    margin-top: 20px;
     text-align: center;
     font-family: 'Indie Flower', cursive;
 }
@@ -225,6 +226,51 @@ p {
 
 /*Media Queries*/
 
+/*Tablet viewport*/
+@media (max-width: 800px) {
+
+    .top-image {
+        display: none;
+    }
+
+    .innovate {
+        justify-content: center;
+        align-items: center;
+        /*font-size: 80px;*/
+        flex-flow: row wrap;
+        width: 100%;
+        margin-left: 20%;
+        border: 1px solid;
+    }
+
+    h1 {
+        font-size: 80px;
+        width: 100%;
+    }
+
+    .get-started {
+        align-items: center;
+        justify-content: center;
+    }
+
+    #nav-bar {
+        border: 1px solid;
+        flex-flow: column-reverse nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navigation {
+        width: 100%;
+        padding: 5%;
+    }
+
+
+
+
+}
+
+/*Mobile viewport*/
 @media (max-width: 500px) {
     .top-image {
         display: none;
@@ -246,36 +292,42 @@ p {
         width: 100%;
     }
 
+    nav a {
+        color: gray;
+        border-top: 1px solid;
+        border-bottom: 1px solid;
+        padding: 5%;
+    }
+
     #nav-bar {
         background-color: antiquewhite;
         flex-flow: column-reverse;
         align-items: center;
-        /*justify-content: space-between;*/
     }
 
     .navigation {
         flex-direction: column;
         font-size: 40px;
-
     }
 
     .innovate {
         justify-content: center;
         align-items: center;
-        /*display: flex;*/
         font-size: 40px;
-        border: 1px solid red;
-        /*width: 100%;*/
         flex-flow: row wrap;
-        /*margin-left: 30px;*/
         width: 100%;
+        margin: 0 0 0 45px;
+    }
+
+    h1 {
+        font-size: 70px;
     }
 
     .get-started {
         align-items: center;
         justify-content: center;
     }
-
-
 }
+
+
 
