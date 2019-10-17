@@ -240,7 +240,7 @@ p {
         flex-flow: row wrap;
         width: 100%;
         margin-left: 20%;
-        border: 1px solid;
+        /*border: 1px solid;*/
     }
 
     h1 {
@@ -254,7 +254,7 @@ p {
     }
 
     #nav-bar {
-        border: 1px solid;
+        /*border: 1px solid;*/
         flex-flow: column-reverse nowrap;
         justify-content: center;
         align-items: center;
