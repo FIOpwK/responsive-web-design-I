@@ -100,7 +100,7 @@ button:hover {
     /*position: fixed;*/
     top: 0;
     width: 100%;
-    background-color: skyblue;
+    /*background-color: skyblue;*/
     border-radius: 80px;
     display: flex;
     justify-content: space-around;
@@ -138,16 +138,17 @@ h1 {
 .middle-img {
     padding: 1%;
     width: 100%;
-
 }
 
 .navigation {
-
-    width: 70%;
+    width: 76%;
     margin: 0;
-    padding: 2%;
+    padding: 1%;
     text-decoration: none;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
+    /*border: 1px solid;*/
 }
 
 nav a {
@@ -189,14 +190,24 @@ p {
     width: 45%;
 }
 
+#ux-ui, #dm-services, #android-services,
+#ios-dev, #web-dev, #design {
+    border: 1px solid;
+    margin: 1%;
+    background-color: #f5fff5;
+}
+
 .courses {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    /*border: 1px solid;*/
 }
 
 .courses button {
     margin-top: 3%;
+    background-color: #cccccc;
+    border-radius: 10px;
 }
 
 /*Bottom content*/
@@ -301,7 +312,7 @@ p {
     }
 
     #nav-bar {
-        background-color: antiquewhite;
+        /*background-color: antiquewhite;*/
         flex-flow: column-reverse;
         align-items: center;
     }
