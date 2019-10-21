@@ -153,9 +153,6 @@ h1 {
 
 nav a {
      color: gray;
-     /*border-top: 1px solid;*/
-     /*border-bottom: 1px solid;*/
-     /*padding: 5%;*/
     text-decoration: none;
  }
 /* pseudo-class*/
@@ -164,7 +161,6 @@ a:hover {
     background-color: greenyellow;
     transition: all 0.9s ease-in-out;
     border-radius: 40px;
-
 }
 
 nav {
@@ -208,7 +204,6 @@ p {
     margin-top: 3%;
     background-color: #cccccc;
     border-radius: 10px;
-
 }
 
 /*Bottom content*/
@@ -229,7 +224,7 @@ p {
 }
 
 .contact {
-    margin: 1% auto ;
+    margin: 1% auto;
     display: flex;
     flex-direction: column;
     padding-bottom: 40px;
@@ -284,9 +279,6 @@ p {
         width: 100%;
         padding: 5%;
     }
-
-
-
 
 }
 
