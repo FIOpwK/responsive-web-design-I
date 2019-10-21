@@ -20,7 +20,7 @@ time, mark, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
+    font-size: 62.5%;
     font: inherit;
     vertical-align: baseline;
 }
@@ -76,18 +76,17 @@ h1, h2, h3, h4, h5 {
     border-bottom: 2px solid;
     display: flex;
     width: 100%;
-    /*padding-top: 5%;*/
     margin-top: 5%;
     text-align: center;
     flex-direction: row-reverse;
-    /*padding: 1%;*/
+    padding-right: 15%;
+    padding-left: 15%;
 }
 
-button {
+button{
     border: 1px solid;
     height: 33px;
     width: 45%;
-    /*max-width: 447px;*/
     background-color: #f3f3f3;
 }
 
@@ -95,6 +94,7 @@ button:hover {
     background-color: #f5fff5;
 }
 
+/*TODO - figure how to get nav fixed more cleanly when using viewport mobile.*/
 #nav-bar {
     font-family: 'Indie Flower', cursive;
     /*position: fixed;*/
@@ -103,10 +103,10 @@ button:hover {
     background-color: skyblue;
     border-radius: 80px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
     /*border: 1px solid red;*/
     z-index: 1;
-
 }
 
 .logo {
@@ -141,8 +141,6 @@ h1 {
 
 }
 
-
-
 .navigation {
 
     width: 70%;
@@ -157,6 +155,7 @@ nav a {
      /*border-top: 1px solid;*/
      /*border-bottom: 1px solid;*/
      /*padding: 5%;*/
+    text-decoration: none;
  }
 /* pseudo-class*/
 
@@ -178,17 +177,27 @@ nav {
     display: flex;
     justify-content: space-between;
     padding: 2%;
-    /*border: 1px solid;*/
+    /*border: 1px solid red;*/
 }
 
 p {
     font-family: 'Indie Flower', cursive;
 }
 
-#features, #about {
+#features, #about, #ux-ui, #dm-services, #android-services,
+#ios-dev, #web-dev, #design  {
     width: 45%;
 }
 
+.courses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.courses button {
+    margin-top: 3%;
+}
 
 /*Bottom content*/
 .bottom-content {
@@ -198,24 +207,23 @@ p {
     justify-content: space-between;
 }
 
+#about-services {
+    border-top: 2px solid;
+    margin-top: 5%;
+}
+
 #services, #product, #vision {
     width: 29%;
 }
 
 .contact {
-
     margin: 1% auto ;
-
     display: flex;
     flex-direction: column;
     padding-bottom: 40px;
     width: 100%;
-
     line-height: 29px;
-
-
 }
-
 
 #copy {
     margin-top: 20px;
@@ -276,19 +284,12 @@ p {
         display: none;
     }
 
-    .top-content {
+     .top-content, .bottom-content, .courses {
         flex-direction: column;
     }
 
-    #features, #about {
-        width: 100%;
-    }
-
-    .bottom-content {
-        flex-direction: column;
-    }
-
-    #services, #product, #vision {
+    #features, #about, #services, #product, #vision, #design, #ux-ui,
+    #dm-services, #web-dev, #ios-dev, #android-services {
         width: 100%;
     }
 
